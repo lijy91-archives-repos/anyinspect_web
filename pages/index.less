@@ -1,0 +1,186 @@
+.page-homepage {
+  .ant-layout-header {
+    border-bottom: none;
+  }
+  .ant-layout-content {
+    .section-jumbotron {
+      width: 100vw;
+      display: flex;
+      background-color: white;
+      justify-content: center;
+      padding-top: 80px;
+      padding-bottom: 30px;
+      min-height: 400px;
+
+      .ant-btn,
+      .a.ant-btn-lg {
+        padding: 10px 0;
+        width: 320px;
+        height: 54px;
+        line-height: 50px;
+      }
+
+      .introduction {
+        width: 400px;
+
+        .app-screenshot {
+          display: none;
+        }
+      }
+    }
+    .section-plugins {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .plugin_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 60px;
+          overflow: hidden;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .section-downloads {
+      width: 100vw;
+      display: flex;
+      background-color: white;
+      justify-content: center;
+
+      .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .download {
+          padding: 0 25px;
+          display: inline-block;
+          vertical-align: top;
+
+          .link-button {
+            margin: 20px 0 5px;
+            padding-top: 6px !important;
+            padding-bottom: 10px;
+            width: 240px;
+            height: 70px;
+            span {
+              font-size: 20px;
+              line-height: 1;
+            }
+          }
+        }
+
+        .logo {
+          height: 100px;
+          width: 100px;
+          background-size: contain !important;
+          margin: 0 auto;
+          -ms-high-contrast-adjust: none;
+        }
+        .logo.windows {
+          background: url('/images/platform_logos/windows.png') center center
+            no-repeat;
+        }
+        .logo.mac {
+          background: url('/images/platform_logos/apple.svg') center center
+            no-repeat;
+        }
+        .logo.linux {
+          background: url('/images/platform_logos/linux.png') center center
+            no-repeat;
+        }
+      }
+    }
+    .section-coming-soon {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .container {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .ant-layout-footer {
+    border-top: none;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .page-homepage {
+    .ant-layout-header {
+      border-bottom: none;
+    }
+    .ant-layout-content {
+      .section-jumbotron {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .introduction {
+          width: 100%;
+          .ant-btn {
+            width: 100%;
+          }
+          .app-screenshot {
+            display: block;
+            margin-top: 40px;
+            width: calc(100vw - 40px);
+          }
+        }
+      }
+      .section-try-it-now {
+      }
+      .section-translation-engines {
+        .ant-row {
+          width: calc(100vw - 40px);
+        }
+        .translation_engine {
+          img {
+            width: 32px;
+            height: 32px;
+            border-radius: 32px;
+          }
+        }
+      }
+      .section-downloads {
+        .ant-row {
+          width: calc(100vw - 40px);
+        }
+        .ant-col {
+          display: flex;
+          justify-content: center;
+        }
+        // display: none;
+      }
+      .section-coming-soon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+          height: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .ant-layout-footer {
+    }
+  }
+
+  #embed-flutter-app {
+    display: none;
+  }
+}

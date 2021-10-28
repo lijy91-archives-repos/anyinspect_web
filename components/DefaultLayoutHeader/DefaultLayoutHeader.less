@@ -1,0 +1,140 @@
+.ant-layout-header {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0;
+
+  .container {
+    align-items: center;
+  }
+
+  .brand {
+    align-items: center;
+    display: flex;
+    margin-right: 40px;
+    img {
+      width: 42px;
+      height: 42px;
+      border-radius: 4px;
+    }
+    label {
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 12px;
+    }
+  }
+
+  .brand,
+  .brand * {
+    cursor: pointer;
+  }
+
+  .ant-menu {
+    border-bottom: none;
+    height: 63px;
+  }
+
+  .drawer-trigger {
+    display: none;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .ant-layout-header {
+    .ant-menu {
+      display: none;
+    }
+    .btn-github {
+      display: none;
+    }
+    .drawer-trigger {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 10px;
+      margin-right: -10px;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.layout-drawer-root {
+  z-index: 100;
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - 64px);
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+
+  .layout-drawer-wrapper {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 64px);
+
+    .ant-drawer-content-wrapper {
+      pointer-events: auto;
+      height: calc(100vh - 64px) !important;
+      .ant-drawer-content {
+        z-index: 99999;
+      }
+      .ant-drawer-body {
+        padding: 0;
+
+        .ant-menu-vertical {
+          border-right: none;
+        }
+        .ant-menu > .ant-menu-item {
+          height: 56px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-left: 16px;
+          margin-right: 16px;
+          padding-left: 0px;
+          padding-right: 0px;
+          border-bottom: 1px solid #f0f0f0;
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          font-weight: 500;
+          color: #2d2d2d;
+          letter-spacing: 0;
+        }
+
+        .ant-menu > .ant-menu-item {
+          a {
+            flex: 1;
+            color: #8d8d8d;
+          }
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        .ant-menu > .ant-menu-item:hover,
+        .ant-menu > .ant-menu-item-selected {
+          background-color: transparent;
+          a {
+            color: #000000;
+          }
+        }
+
+        .ant-menu-title-content {
+          display: flex;
+          flex: 1;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

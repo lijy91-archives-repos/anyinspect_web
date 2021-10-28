@@ -1,0 +1,31 @@
+html,
+body {
+  background-color: #f7f8f9 !important;
+}
+
+.ant-form-item-control-input-content {
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px !important;
+  }
+}
+
+.virtual-window {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.cropper-container {
+  position: absolute;
+  z-index: 999999;
+  top: 0;
+  .cropper-canvas {
+    display: none;
+  }
+}
+.cropper-container.cropper-bg {
+  background-image: none;
+}

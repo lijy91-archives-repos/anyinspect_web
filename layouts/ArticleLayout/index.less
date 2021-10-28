@@ -1,0 +1,27 @@
+@import '../../styles/antd-custom.less';
+
+.layout-article {
+  min-height: 100vh;
+  .ant-layout-content {
+    .layout-article-container {
+      flex-direction: row;
+    }
+  }
+}
+
+.layout-article.ant-layout {
+  .ant-layout-content {
+    background-color: white !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .layout-article {
+    .ant-layout-content {
+      .layout-article-container {
+        flex-direction: column;
+      }
+    }
+  }
+}

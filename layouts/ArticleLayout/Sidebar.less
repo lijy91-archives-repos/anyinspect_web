@@ -1,0 +1,78 @@
+@import '../../styles/antd-custom.less';
+
+.layout-article {
+  .sidebar {
+    position: sticky;
+    top: 64px;
+    width: 220px;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    padding-top: 20px;
+    margin-left: -12px;
+    margin-right: 42px;
+
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+
+    .ant-menu-sub.ant-menu-inline {
+      background-color: transparent;
+    }
+    .ant-menu-submenu {
+      .ant-menu-submenu-title {
+        color: rgba(0, 0, 0, 0.45);
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        padding-left: 12px !important;
+      }
+      .ant-menu-sub {
+        .ant-menu-item {
+          padding-left: 12px !important;
+          height: 36px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .layout-article {
+    .sidebar {
+      position: initial;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-bottom: -10px;
+
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+
+        .ant-dropdown-trigger {
+          height: 38px;
+          border: 1px solid #ced4da;
+          border-radius: 2px;
+          width: 100%;
+          display: flex;
+          padding-left: 12px;
+          align-items: center;
+          justify-content: center;
+
+          .anticon.anticon-down {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+---
+title: 'Introduction'
+---
+
+## What is AnyInspect?
+
+`AnyInspect` A tool for debugging your Flutter apps.
+
+## Quick Start
+
+### Installation
+
+```yaml
+dependencies:
+  anyinspect: ^0.0.1
+  # Plugins
+  anyinspect_plugin_network: ^0.0.1
+  anyinspect_plugin_shared_preferences: ^0.0.1
+```
+
+## Usage
+
+```dart
+import 'package:anyinspect/anyinspect.dart';
+import 'package:anyinspect_plugin_network/anyinspect_plugin_network.dart';
+import 'package:anyinspect_plugin_shared_preferences/anyinspect_plugin_shared_preferences.dart';
+
+Future<void> main(List<String> args) async {
+  AnyInspect anyInspect = AnyInspect.instance;
+  anyInspect.addPlugin(AnyInspectPluginNetwork());
+  anyInspect.addPlugin(AnyInspectPluginSharedPreferences());
+  anyInspect.start();
+
+  // ...
+}
+```
+
+## Thank You
+
+🎉 🎉 🎉
