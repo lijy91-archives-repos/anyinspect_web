@@ -35,7 +35,7 @@ const DefaultLayoutHeader = () => {
               </Menu.Item>
               <Menu.Item key="/release-notes">
                 <Link href="/release-notes">
-                  <a>ReleaseNotes</a>
+                  <a>Release Notes</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="/faq">

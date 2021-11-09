@@ -39,7 +39,7 @@ const ReleaseNotes = () => {
             >
               {version.date}
             </Text>
-            <Title level={4}>下载</Title>
+            <Title level={4}>Download</Title>
             <div>
               <img src={``} />
               <img src={``} />
@@ -52,7 +52,7 @@ const ReleaseNotes = () => {
                 </Link>
               ))}
             </div>
-            <Title level={4}>变更内容</Title>
+            <Title level={4}>Changelog</Title>
             <div>
               <ul>
                 {version.changelogs.map((e) => (
