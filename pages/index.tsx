@@ -51,7 +51,7 @@ const HomepagePage = () => {
   };
 
   useEffect(() => {
-    // setTimeout(() => handleLoadData(), 100);
+    setTimeout(() => handleLoadData(), 100);
   }, []);
 
   return (
