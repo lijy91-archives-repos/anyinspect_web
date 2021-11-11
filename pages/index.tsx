@@ -127,27 +127,27 @@ const HomepagePage = () => {
                 </Col>
                 <Col className="gutter-row plugin_item" span={6}>
                   <img src="/images/placeholder.png" />
-                  <Text>Plugin1</Text>
+                  <Text>Plugin</Text>
                 </Col>
                 <Col className="gutter-row plugin_item" span={6}>
                   <img src="/images/placeholder.png" />
-                  <Text>Plugin1</Text>
+                  <Text>Plugin</Text>
                 </Col>
                 <Col className="gutter-row plugin_item" span={6}>
                   <img src="/images/placeholder.png" />
-                  <Text>Plugin1</Text>
+                  <Text>Plugin</Text>
                 </Col>
                 <Col className="gutter-row plugin_item" span={6}>
                   <img src="/images/placeholder.png" />
-                  <Text>Plugin1</Text>
+                  <Text>Plugin</Text>
                 </Col>
                 <Col className="gutter-row plugin_item" span={6}>
                   <img src="/images/placeholder.png" />
-                  <Text>Plugin1</Text>
+                  <Text>Plugin</Text>
                 </Col>
                 <Col className="gutter-row plugin_item" span={6}>
                   <img src="/images/placeholder.png" />
-                  <Text>Plugin1</Text>
+                  <Text>Plugin</Text>
                 </Col>
               </Row>
             </Container>
