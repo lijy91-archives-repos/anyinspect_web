@@ -32,6 +32,9 @@ import 'package:anyinspect_plugin_network/anyinspect_plugin_network.dart';
 import 'package:anyinspect_plugin_shared_preferences/anyinspect_plugin_shared_preferences.dart';
 
 Future<void> main(List<String> args) async {
+  // Must add this line.
+  WidgetsFlutterBinding.ensureInitialized();
+
   AnyInspect anyInspect = AnyInspect.instance;
   anyInspect.addPlugin(AnyInspectPluginNetwork());
   anyInspect.addPlugin(AnyInspectPluginSharedPreferences());
